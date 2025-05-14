@@ -6,5 +6,18 @@ using UnityEngine;
 
 public class ColorShapeData : ScriptableObject
 {
-    
+    [SerializeField] private Color color;
+    [SerializeField] private Sprite sprite;
+
+    public Color Color => color;
+    public Sprite Sprite => sprite;
+
+    public void SetColor(Color newColor)
+    {
+        color = newColor;
+    }
+    public void SetSprite(Sprite newSprite)
+    {
+        sprite = newSprite;
+    }
 }
